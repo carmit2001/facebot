@@ -1,17 +1,18 @@
 {
-  "name": "facebot",
+  "name": "spbot",
   "version": "1.0.0",
-  "description": "Chatbot",
+  "description": "SPBot Server",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" &amp;&amp; exit 1",
+    "start": "node app.js"
+    
   },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "body-parser": "^1.18.3",
-    "express": "^4.16.4",
-    "mongoose": "^5.3.14",
-    "request": "^2.88.0"
-  }
+  "engines":{
+    "node": "10.14.1",
+    "npm": "6.4.1"
+  },
+  "author": "Joyce Echessa",
+  "license": "ISC"
 }
+
