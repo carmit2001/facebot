@@ -208,7 +208,8 @@ function processMessage(event) {
 }
 
 function findMovie(userId, movieTitle) {
-    request("http://www.omdbapi.com/?type=movie&t=" + movieTitle, function (error, response, body) {
+  let apiKey ='420ff3f7'
+    request(`http://www.omdbapi.com/?type=movie&t=${movieTitle}&apiKey=${apiKey}`, function (error, response, body) {
         if (!error && response.statusCode == 200) {
             var movieObj = JSON.parse(body);
             if (movieObj.Response === "True") {
