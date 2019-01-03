@@ -66,7 +66,7 @@ function processPostback(event) {
         name = bodyObj.first_name;
         greeting = "Hi " + name + ". ";
       }
-      var message = greeting + "Welcome to our schedual!";
+      var message = greeting + "Welcome to our schedule!";
       sendMessage(senderId, {text: message});
     });
   }
