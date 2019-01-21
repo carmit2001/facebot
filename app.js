@@ -89,12 +89,12 @@ function sendMessage(recipientId, message) {
   });
 }
 
-var express = require("express");
-var request = require("request");
-var bodyParser = require("body-parser");
+// var express = require("express");
+// var request = require("request");
+// var bodyParser = require("body-parser");
 var mongoose = require("mongoose");
 
-mongoose.connect(process.env.MONGODB_URI);
+mongoose.connect(process.env.MONGODB_URI,{ useNewUrlParser: true });
 // mongoose.connect()
 var Movie = require("./models/movie");
 
