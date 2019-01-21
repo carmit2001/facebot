@@ -97,7 +97,7 @@ var mongoose = require("mongoose");
 // mongoose.connect(process.env.MONGODB_URI,{ useNewUrlParser: true });
 // mongoose.connect()
 
-mongoose.connect('mongodb://carmit:carmit2001@ds147734.mlab.com:47734/scheduledb', {
+mongoose.connect('mongodb://@ds147734.mlab.com:47734/scheduledb', {
   useNewUrlParser: true,
   auth: {
     user: 'carmit',
