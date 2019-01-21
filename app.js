@@ -94,7 +94,8 @@ var request = require("request");
 var bodyParser = require("body-parser");
 var mongoose = require("mongoose");
 
-var db = mongoose.connect(process.env.MONGODB_URI);
+mongoose.connect(process.env.MONGODB_URI);
+// mongoose.connect()
 var Movie = require("./models/movie");
 
 var app = express();
