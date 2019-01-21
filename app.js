@@ -94,16 +94,9 @@ function sendMessage(recipientId, message) {
 // var bodyParser = require("body-parser");
 var mongoose = require("mongoose");
 
-// mongoose.connect(process.env.MONGODB_URI,{ useNewUrlParser: true });
+mongoose.connect(process.env.MONGODB_URI);
 // mongoose.connect()
 
-mongoose.connect('mongodb://@ds147734.mlab.com:47734/scheduledb', {
-  useNewUrlParser: true,
-  auth: {
-    user: 'carmit',
-    password: 'carmit2001'
-  }
-})
 var Movie = require("./models/movie");
 
 var app = express();
