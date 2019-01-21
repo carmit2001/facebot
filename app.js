@@ -96,12 +96,12 @@ var mongoose = require("mongoose");
 
 // mongoose.connect(process.env.MONGODB_URI,{ useNewUrlParser: true });
 // mongoose.connect()
-var mongoUri = 'mongodb://@ds225543.mlab.com:25543/questions';
-mongoose.connect(mongoUri, {
+
+mongoose.connect('mongodb://carmit:carmit2001@ds147734.mlab.com:47734/scheduledb', {
   useNewUrlParser: true,
   auth: {
-    user: 'yevgeny1',
-    password: 'papa2207'
+    user: 'carmit',
+    password: 'carmit2001'
   }
 })
 var Movie = require("./models/movie");
