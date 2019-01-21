@@ -94,8 +94,16 @@ function sendMessage(recipientId, message) {
 // var bodyParser = require("body-parser");
 var mongoose = require("mongoose");
 
-mongoose.connect(process.env.MONGODB_URI,{ useNewUrlParser: true });
+// mongoose.connect(process.env.MONGODB_URI,{ useNewUrlParser: true });
 // mongoose.connect()
+var mongoUri = 'mongodb://@ds225543.mlab.com:25543/questions';
+mongoose.connect(mongoUri, {
+  useNewUrlParser: true,
+  auth: {
+    user: 'yevgeny1',
+    password: 'papa2207'
+  }
+})
 var Movie = require("./models/movie");
 
 var app = express();
